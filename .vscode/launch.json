@@ -8,14 +8,7 @@
             "type": "vscode-edge-devtools.debug",
             "request": "launch",
             "name": "Open index.html",
-            "file": "d:\\Bloc 2 - SLAM\\Bloc1\\Bloc1\\docs\\pages\\index.html"
+            "file": "d:\\Bloc 2 - SLAM\\Bloc1\\Bloc1\\docs\\pages\\td3\\index.html"
         } 
-        ,
-        { 
-            "type": "vscode-edge-devtools.debug",
-            "request": "launch",
-            "name": "Open doc-mentions-legales.html",
-            "file": "d:\\Bloc 2 - SLAM\\Bloc1\\Bloc1\\doc-mentions-legales.html"
-        }
     ]
 }
