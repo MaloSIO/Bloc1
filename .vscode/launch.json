@@ -11,4 +11,5 @@
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}/docs/pages/td3/index.html"
         }
+    ]
 }
