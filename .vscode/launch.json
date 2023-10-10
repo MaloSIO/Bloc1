@@ -10,7 +10,7 @@
             "name": "Open index.html",
             "file": "d:\\Bloc 2 - SLAM\\Bloc1\\Bloc1\\docs\\pages\\index.html"
         } 
-// 
+        ,
         { 
             "type": "vscode-edge-devtools.debug",
             "request": "launch",
