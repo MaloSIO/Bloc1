@@ -8,7 +8,7 @@
             "type": "vscode-edge-devtools.debug",
             "request": "launch",
             "name": "Open index.html",
-            "file": "${workspaceFolder}/docs/pages/td3/index.html"
+            "file": "D:/Bloc 2 - SLAM/Bloc1/docs/pages/td3/index.html"
         } 
     ]
 }
