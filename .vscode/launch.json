@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "vscode-edge-devtools.debug",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\xampp\\htdocs\\Bloc1-SLAM\\index.html"
+            "file": "d:\\Bloc 2 - SLAM\\Bloc1\\Bloc1\\docs\\pages\\index.html"
         }
     ]
 }
