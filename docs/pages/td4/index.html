@@ -6,17 +6,17 @@
     </head>
     <body>
         <h1>JS Examples :</h1>
-            <input type="text" id="nom" name="nom" value="" placeholder="Name ?">
+            <input type="text" id="NameInput" value="" placeholder="Name ?">
                 <div id="result">
                     <p>Name :</p>
-                    <p id="nom">********</p>
+                    <p id="NameOutput">********</p>
                 </div>
         <script>
-            //document.write(nom);
-            /*const KeyPressFunction=function(e) {
-
-            }
-            document.addEventListener("keypress", KeyPressFunction);*/
+            console.log("WARN : DEV ONLY CONSOLE !")
+                const KeyPressFunction=function(e) {
+                    document.querySelector("#nameOutput").innerHTML=event.target.value;
+                };
+                document.querySelector('#NameInput').addEventListener("keyup", KeyPressFunction);
         </script>
     </body>
 </html>
