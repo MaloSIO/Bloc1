@@ -6,18 +6,11 @@
     </head>
     <body>
         <h1>JS Examples :</h1>
-            <input type="text" id="NameInput" value="" placeholder="Name ?">
-                <div id="result">
-                    <br>
-                    <p>Name :</p>
-                    <p id="NameOutput">Wow, such emptiness 0-o</p>
-                </div>
-        <script>
-            console.log("WARN : DEV ONLY CONSOLE !")
-                const KeyPressFunction=function(e) {
-                    document.querySelector("#nameOutput").innerHTML=event.target.value;
-                };
-                document.querySelector('#NameInput').addEventListener("keyup", KeyPressFunction);
-        </script>
+        <p>Please enter your name here :</p><input type="text" id="NameInput" value="" placeholder="Name ?">
+            <div id="result">
+                <br>
+                Name Preview : <p id="NameOutput">Wow, Hello Odysseus !</p>
+            </div>
+        <script src="../../assets/js/td4/td4.js"></script>
     </body>
 </html>
