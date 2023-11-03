@@ -8,3 +8,7 @@
     email = malo.devic@sts-sio-caen.info
 [credential]
     helper = wincred
+    
+    {
+  "git.autofetch": false
+}
