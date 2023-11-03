@@ -6,11 +6,38 @@
     </head>
     <body>
         <h1>JS Examples :</h1>
-        <p>Please enter your name here :</p><input type="text" id="NameInput" value="" placeholder="Name ?">
-            <div id="result">
-                <br>
-                Name Preview : <p id="NameOutput">Wow, Hello Odysseus !</p>
-            </div>
+        <h2>
+            <fieldset>
+                <legend>Name Preview</legend>
+                    <p>Please enter your name here :</p><input type="text" id="NameInput" value="" placeholder="Name ?">
+                </h2>
+            </fieldset>
+        </h2>
+        <div id="result">
+            Name Preview : <p id="NameOutput">Wow, Hello Odysseus !</p>
+        </div>
+        <hr>
+            <h2>
+                <fieldset>
+                   <legend>Elements Creator</legend>
+                        <input type="text" id="elm" placeholder="Text">
+                        <input type="color" id="Color">
+                        <button type="button" id="Créer">Créer</button>
+                </fieldset>
+            </h2>
+            Text Color Preview :
+                <ul id="ul-elms">
+
+                </ul>
+            </h2>
+            <hr>
+                <h2>
+                    <fieldset>
+                        <legend>Background Color</legend>
+                            <input type="color" id="bg-color">
+                            <button type="button" id="Add Background">Add Background</button>
+                    </fieldset>
+                </h2>
         <script src="../../assets/js/td4/td4.js"></script>
     </body>
 </html>
