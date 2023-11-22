@@ -1,43 +1,140 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="..\..\./assets/css/td4/style.css">
-        <title>JS Examples</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Exercises</title>
+        <style>
+            body {
+                transition: background-color 1s ease;
+                color: #000; /* Default text color (black) */
+            }
+
+            #elementToToggle {
+                display: none;
+            }
+        </style>
     </head>
     <body>
-        <h1>JS Examples :</h1>
-        <h2>
-            <fieldset>
-                <legend>Name Preview</legend>
+        <h1>JS Exercises :</h1>
+            <h2>
+                <fieldset>
+                    <legend>Name Preview</legend>
                     <p>Please enter your name here :</p><input type="text" id="NameInput" value="" placeholder="Name ?">
-                </h2>
-            </fieldset>
-        </h2>
-        <div id="result">
-            Name Preview : <p id="NameOutput">Wow, Hello Odysseus !</p>
-        </div>
+                </fieldset>
+            </h2>
+            <div id="result">
+                Name Preview : <p id="NameOutput">Wow, Hello Odysseus !</p>
+            </div>
         <hr>
             <h2>
                 <fieldset>
-                   <legend>Elements Creator</legend>
-                        <input type="text" id="elm" placeholder="Text">
-                        <input type="color" id="Color">
-                        <button type="button" id="Créer">Créer</button>
+                    <legend>Elements Creator</legend>
+                    <input type="text" id="elm" placeholder="Text">
+                    <input type="color" id="Color">
+                    <button type="button" id="Créer">Créer</button>
                 </fieldset>
             </h2>
             Text Color Preview :
                 <ul id="ul-elms">
 
                 </ul>
+        <hr>
+            <h2>
+                <fieldset>
+                    <legend>Calculer la somme</legend>
+                    <label for="num1">Nombre 1 :</label>
+                    <input type="number" id="num1" placeholder="Entrez le premier nombre">
+                    <br>
+                    <label for="num2">Nombre 2 :</label>
+                    <input type="number" id="num2" placeholder="Entrez le deuxième nombre">
+                    <br>
+                    <button onclick="calculerSomme()">Calculer la somme</button>
+        
+                    <p id="resultat">Résultat : </p>
+                </fieldset>
             </h2>
-            <hr>
-                <h2>
-                    <fieldset>
-                        <legend>Background Color</legend>
-                            <input type="color" id="bg-color">
-                            <button type="button" id="Add Background">Add Background</button>
-                    </fieldset>
-                </h2>
-        <script src="../../assets/js/td4/td4.js"></script>
+        <hr>
+            <h2>
+                <fieldset>
+                <legend>Background Color</legend>
+                <input type="color" id="bg-color">
+                <button type="button" onclick="changerCouleurFond()">Changer la couleur de fond</button>
+                </fieldset>
+            </h2>
+        <hr>
+            <h2>
+                <fieldset>
+                    <legend>Afficher une image</legend>
+                    <label for="imageSelector">Choisissez une image :</label>
+                    <select id="imageSelector" onchange="afficherImage()">
+                    <option value="image1">Source : t4.ftcdn.net</option>
+                    <option value="image2">Source : www.visittheusa.fr</option>
+                    <option value="image3">Source : www.scoltours.fr</option>
+                    </select>
+                    <img id="selectedImage" src="" alt="Selected Image">
+                </fieldset>
+            </h2>
+        <hr>
+            <h2>
+                <fieldset>
+                <legend>Afficher une alerte</legend>
+                <p onmouseover="afficherAlerte()">Hello</p>
+                </fieldset>
+            </h2>
+        <hr>
+            <h2>
+                <fieldset>
+                <legend>Horloge Numérique</legend>                     
+                <p>Current time in Caen, France :</p>
+                <p id="digitalClock"></p>
+                </fieldset>
+            </h2>
+        <hr>
+            <h2>
+                <fieldset>
+                <legend>Confirmation de Suppression</legend>
+                <button onclick="demanderConfirmationSuppression()">Delete</button>
+                <p id="resultatSuppression"></p>
+                </fieldset>
+            </h2>
+        <hr>
+            <h2>
+                <fieldset>
+                <legend>Toggle avec Case à Cocher</legend>
+                <label for="checkboxToggle">Activer/Désactiver :</label>
+                <input type="checkbox" id="checkboxToggle" onchange="toggleElementVisibility()">
+                    <div id="elementToToggle">
+                    <!-- Contenu de l'élément à cacher/afficher -->
+                    <p>Eglantine, ici Mirabelle !</p>
+                    </div>
+                </fieldset>
+            </h2>
+        <hr>
+            <h2>
+                <fieldset>
+                    <legend>Formulaire de Contact</legend>
+                    <form id="contactForm" onsubmit="envoyerFormulaire(event)">
+                        <div class="form-group">
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                    <br>
+                        <div class="form-group">
+                            <label for="email">E-mail :</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    <br>
+                        <div class="form-group">
+                            <label for="message">Message :</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+        
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </fieldset>
+            </h2>
+        <script src="../../assets/js/td4/ex-js.js"></script>
     </body>
 </html>
