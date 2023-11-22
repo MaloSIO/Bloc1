@@ -8,18 +8,9 @@
     }?>
 <ul>
     <li>
-        <a href= "?message=Hola">Salut en espagnol</a>
-    </li>
-    <li>
         <a href="?message=Salut">Salut en français</a>
     </li>
     <li>
         <a href= "?message=Hello">Salut en anglais</a>
-    </li>
-    <li>
-        <a href= "?message=Ciao">Salut en italien</a>
-    </li>
-    <li>
-        <a href= "?message=">Rien</a>
     </li>
 </ul>
