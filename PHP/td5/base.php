@@ -19,5 +19,7 @@
     <li>
         <a href= "?message=Ciao">Salut en italien</a>
     </li>
-    
+    <li>
+        <a href= "?message=">Rien</a>
+    </li>
 </ul>
